@@ -2,9 +2,9 @@
   "name": "es-private",
   "version": "0.0.1",
   "description": "show how the es private class fields work",
-  "main": "class_example.js",
+  "main": "test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"node test.js"
   },
   "author": "Ersin Buckley",
   "license": "MIT"
