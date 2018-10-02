@@ -4,7 +4,7 @@
   "description": "show how the es private class fields work",
   "main": "test.js",
   "scripts": {
-    "test": "echo \"node test.js"
+    "test": "node test.js"
   },
   "author": "Ersin Buckley",
   "license": "MIT"

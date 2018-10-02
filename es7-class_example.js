@@ -1,8 +1,8 @@
 // Use babel to transpile this example
 class Block {
-  #height
-  #width
-  #length
+  #height = 0
+  #width = 0
+  #length = 0
 
   constructor(dimensions) {
     this.#width = dimensions[0]

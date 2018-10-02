@@ -1,4 +1,4 @@
-module.exports = function(dimensions) {
+module.exports = function(dims) {
   const privateProps = new WeakMap()
   class Block {
     constructor(dimensions) {
@@ -7,28 +7,28 @@ module.exports = function(dimensions) {
         width,
         length,
         height
-      })
+      })  
+    }
 
-      this.getWidth = function() {
-        return privateProps.get(this).width
-      }
+    getWidth () {
+      return privateProps.get(this).width
+    }
 
-      this.getLength = function() {
-        return privateProps.get(this).length
-      }
+    getLength () {
+      return privateProps.get(this).length
+    }
 
-      this.getHeight = function() {
-        return privateProps.get(this).height
-      }
+    getHeight () {
+      return privateProps.get(this).height
+    }
 
-      this.getVolume = function() {
-        return privateProps.get(this).width * privateProps.get(this).height * privateProps.get(this).length
-      }
+    getVolume () {
+      return privateProps.get(this).width * privateProps.get(this).height * privateProps.get(this).length
+    }
 
-      this.getSurfaceArea = function() {
-        return (privateProps.get(this).height * privateProps.get(this).length * 2) + (privateProps.get(this).width * privateProps.get(this).length * 2) + (privateProps.get(this).width * privateProps.get(this).height * 2)
-      }
+    getSurfaceArea () {
+      return (privateProps.get(this).height * privateProps.get(this).length * 2) + (privateProps.get(this).width * privateProps.get(this).length * 2) + (privateProps.get(this).width * privateProps.get(this).height * 2)
     }
   }
-  return new Block(dimensions)
+  return new Block(dims)
 }
